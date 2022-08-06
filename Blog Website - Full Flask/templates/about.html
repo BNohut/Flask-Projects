@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hi!</p>
+        <p>I am Buğra and I graduated from the department of Survey Engineering at the BlackSea Technical University. I am married and have one daughter.</p>
+        <p>In 2021, Somethings happened and I decided to change my life and tried to find something that makes me happy and feel better.
+        When I was in university, I always interested in coding and choose my classes for learning how to code.
+        However I met with Python and bought a course from Angela Yu which called 100 Days of Coding: Python. With that course, I realized that How much I really like coding, searching for news and excited to run my codes with zero error.
+        The coding makes me feel awesome. </p>
+        <p>Isn't the coding some sword of magic? I believe it is.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}

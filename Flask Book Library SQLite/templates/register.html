@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="box">
+    {% if not logged_in %}
+	<h1>Register</h1>
+    <form action="{{ url_for('register') }}" method="post">
+    	<input type="text" name="name" placeholder="Name" required="required" />
+		<input type="email" name="email" placeholder="Email" required="required" />
+        <input type="password" name="password" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Sign me up.</button>
+    </form>
+        {% else %}
+        <h1>You are logged in already by using your registered account.</h1>
+    {% endif %}
+</div>
+
+{% endblock %}
